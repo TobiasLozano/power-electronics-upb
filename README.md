@@ -15,13 +15,3 @@ Students:
 |----------|----------------------------|-----------------------------------------------------------|
 |     1    |Introduction to Power Diodes|    [Module 1: Diodes](Module%201%20Diodes/module_1_info)  |
 
-# Consultation Themes
-
--  Characteristics of power diodes
--  Types of diodes (general purpose, fast recovery, and Schottky)
--  Freewheeling
--  Rectifiers with diodes: single-phase (full wave) and three-phase
--  Performance parameters
--  Design of a rectifier circuit
--  Simulations: single-phase and three-phase rectifiers
-
