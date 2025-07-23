@@ -15,26 +15,27 @@ $$
 
 Where:
 
-$
-I_D = \text{Current through the diode, A}\\
-V_D = \text{Diode voltage with anode positive with respect to cathode, V}\\
-I_S = \text{Leakage current, typically in the range }10^{-6} \text{ to }10^{-15}\text{ A}\\
-n = \text{empirical constant knowns as emission coefficient,  usually whose value varies from 1 to 2}
-$
+$I_D$ = Current through the diode, A
+
+$V_D$ = Diode voltage with anode positive with respect to cathode, V
+
+$I_S$ = Leakage current, typically in the range $10^{-6}$ A to $10^{-15}$ A
+
+$n$ = empirical constant knowns as emission coefficient,  usually whose value varies from 1 to 2
 
 The diode characteristic can be divided into three regions : 
 
-- Forward-biased	region,	where	VD > 0
-- Reverse-biased	region,	where	VD < 0
-- Breakdown region,	where	VD < -VBR
+- Forward-biased	region,	where	$V_D > 0$
+- Reverse-biased	region,	where	$V_D < 0$
+- Breakdown region,	where	$V_D < -V_BR$
 
 
 # DIODE TYPES 
 |Diode|Voltage range|Current range|Reverse recovery time|Applications| 
 |---|---|---|---|---|
-|General-purpose|50V to 5kV|0A to several thousands|25 $\mu\text{S}$ |Diode rectifier, converters for a low-input frequency up to 1kHz, line-commutated converters|
-|Fast-recovery|50V to 3kV|0A to hundreds of amperes|5 $\mu\text{S}$|DC-DC and DC-AC converter circuits|
-|Schottky|0V to 100V| 1A to 400A|10 $n\text{S}$|High-current and low-voltage DC power supplies|
+|General-purpose|50 V to 5 kV|0A to several thousands|25 $\mu\text{S}$ |Diode rectifier, converters for a low-input frequency up to 1 kHz, line-commutated converters|
+|Fast-recovery|50 V to 3 kV|0A to hundreds of amperes|5 $\mu\text{S}$|DC-DC and DC-AC converter circuits|
+|Schottky|0 V to 100 V| 1 A to 400 A|10 $n\text{S}$|High-current and low-voltage DC power supplies|
 
 # FREEWHEELING
 
