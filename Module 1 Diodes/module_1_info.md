@@ -24,24 +24,23 @@ $
 
 The diode characteristic can be divided into three regions : 
 
-### Forward-biased	region,	where	VD > 0
-
-### Reverse-biased	region,	where	VD < 0
-
-### Breakdown region,	where	VD < -VBR
+- Forward-biased	region,	where	VD > 0
+- Reverse-biased	region,	where	VD < 0
+- Breakdown region,	where	VD < -VBR
 
 
-# DIODE TYPES (Standard or general-purposes, fast recovery, Schottky)
-
-General-purposes: The general-purposes diodes have relatively high reverse recovery time, are used in low-speed applications (1kHz). These diodes cover current ratings from less Than 1 A to several thousands of amperes, with voltage ratings from 50V to around 5kV
-
-Fast-recovery: These diodes have low recovery time and are used in DC-DC and DC-AC converter circuits. Cover current ratings of voltage from 50V to around 3kV, and from less than 1A to hundreds of amperes
-
-Schottky: The	charge	storage problem of a pn-junction can be eliminated (or minimized) in a Schottky diode. The maximum allowable voltage of this Diode is generally limited to 100V. The current ratings of Schottky diodes vary from 1 to 400A. The Schottky diodes are ideal for high current and low-voltage dc power supplies
+# DIODE TYPES 
+|Diode|Voltage range|Current range|Reverse recovery time|Applications| 
+|---|---|---|---|---|
+|General-purpose|50V to 5kV|0A to several thousands|25 $\mu\text{S}$ |Diode rectifier, converters for a low-input frequency up to 1kHz, line-commutated converters|
+|Fast-recovery|50V to 3kV|0A to hundreds of amperes|5 $\mu\text{S}$|DC-DC and DC-AC converter circuits|
+|Schottky|0V to 100V| 1A to 400A|10 $n\text{S}$|High-current and low-voltage DC power supplies|
 
 # FREEWHEELING
 
+the freewheeling diode (Dm) provides a safe path for the inductive current when the switch opens, preventing high voltage spikes and protecting the switch from damage
 
+<img src="./images/FreeWheelingDiode.png" alt="FreeWheeling diode" />
 
 # RECTIFIERS WITH DIODES
 
@@ -66,3 +65,8 @@ A three-phase bridge rectifier uses six diodes to convert AC to DC in high-power
 - The rms value of the output current, $I_rms$
 - The output AC power: $P_ac = V_rms * I_rms$
 - The efficiency of a rectifier: $ n = P_dc/P_ac$
+
+
+# DESIGN OF A RECTIFIER CIRCUIT
+
+

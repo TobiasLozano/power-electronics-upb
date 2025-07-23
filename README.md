@@ -13,7 +13,7 @@ Students:
 # Content
 |  Module  |           Theme            |    Link                                                   |
 |----------|----------------------------|-----------------------------------------------------------|
-|     1    |Introduction to Power Diodes|    [Modulo 1: Diodos](Module%201%20Diodes/module_1_info)  |
+|     1    |Introduction to Power Diodes|    [Module 1: Diodes](Module%201%20Diodes/module_1_info)  |
 
 # Consultation Themes
 
