@@ -89,6 +89,7 @@ For the center-tapped rectifier, the first image shows the LTspice schematic usi
 
 [LtSpice File](https://github.com/TobiasLozano/power-electronics-upb/blob/main/Module%201%20Diodes/circuits/single-phase%20diode%20rectifier%20circuit.asc)
 
+
 <!-- Center-tapped single-phase rectifier (2 diodes) -->
 <img src="./images/Single-phase_diode_rectifier_circuit.jpg" alt="Single-phase rectifier circuit" />
 <p align="center"><b>Fig. 5.</b> Center-tapped rectifier schematic.</p>
@@ -102,6 +103,7 @@ For the center-tapped rectifier, the first image shows the LTspice schematic usi
 The next set of images corresponds to the full-wave bridge rectifier. The first image shows the complete circuit, where a sinusoidal AC source is connected to a diode bridge (four diodes) and a load resistor. The following images present the input and output voltage waveforms. The output waveform demonstrates the rectified signal, which is a series of positive pulses with a peak voltage slightly below the input peak voltage due to diode forward voltage drops.
 
 [LtSpice FIle](https://github.com/TobiasLozano/power-electronics-upb/blob/main/Module%201%20Diodes/circuits/Bridge_Rectifier_Circuit.asc)
+
 
 <!-- Bridge rectifier (4 diodes) -->
 <img src="./images/ac-dc-rectifier-circuit.jpeg" alt="Full-wave bridge rectifier circuit" />
@@ -120,6 +122,8 @@ A sinusoidal AC source is connected to a diode bridge (four diodes) and a 1â€¯kÎ
 - **Three-phase rectifier circuit in LTspice using MUR460 diodes:**
 
 [LtSpice File](https://github.com/TobiasLozano/power-electronics-upb/blob/main/Module%201%20Diodes/circuits/three-phase.asc)
+
+
 <img src="./images/rectifier-circuit.png" alt="LTspice rectifier circuit" />
 
 <p align="center"><b>Fig. 5.</b> LTspice simulation schematic for a three-phase rectifier using MUR460 diodes.</p>
