@@ -81,6 +81,37 @@ To design a rectifier circuit, diode arrangements are used that vary according t
 
 Below are examples from simulations:
 
+- **Single-phase rectifier circuit in LTspice:**
+
+The following images show two typical single-phase rectifier configurations simulated in LTspice: the center-tapped rectifier with two diodes and the full-wave bridge rectifier with four diodes.
+
+For the center-tapped rectifier, the first image shows the LTspice schematic using two diodes and a center-tapped transformer. The next image displays the input voltage waveform applied to the circuit, and the third image shows the output voltage waveform, which is a pulsating DC signal after rectification.
+
+<!-- Center-tapped single-phase rectifier (2 diodes) -->
+<img src="./images/Single-phase_diode_rectifier_circuit.jpg" alt="Single-phase rectifier circuit" />
+<p align="center"><b>Fig. 5.</b> Center-tapped rectifier schematic.</p>
+
+<img src="./images/Single-phase_diode_rectifier_circuit_input.jpg" alt="Single-phase rectifier input" />
+<p align="center"><b>Fig. 6.</b> Input voltage waveform.</p>
+
+<img src="./images/Single-phase_diode_rectifier_circuit_Output.jpg" alt="Single-phase rectifier output" />
+<p align="center"><b>Fig. 7.</b> Output voltage waveform.</p>
+
+The next set of images corresponds to the full-wave bridge rectifier. The first image shows the complete circuit, where a sinusoidal AC source is connected to a diode bridge (four diodes) and a load resistor. The following images present the input and output voltage waveforms. The output waveform demonstrates the rectified signal, which is a series of positive pulses with a peak voltage slightly below the input peak voltage due to diode forward voltage drops.
+
+<!-- Bridge rectifier (4 diodes) -->
+<img src="./images/ac-dc-rectifier-circuit.jpeg" alt="Full-wave bridge rectifier circuit" />
+<p align="center"><b>Fig. 8.</b> Complete circuit of a full-wave bridge rectifier</p>
+
+A sinusoidal AC source is connected to a diode bridge (four diodes) and a 1 kΩ load resistor. This configuration allows current to flow through the load in the same direction during both half-cycles of the input.
+
+<img src="./images/ac-dc-rectifier-input.jpeg" alt="Bridge rectifier input signal" />
+<p align="center"><b>Fig. 9.</b> Time-domain simulation of the bridge rectifier circuit input: the blue trace shows the 24 V, 60 Hz sinusoidal AC voltage source before rectification.</p>
+
+<img src="./images/ac-dc-rectifier-output.jpeg" alt="Bridge rectifier output signal" />
+<p align="center"><b>Fig. 10.</b> Output (green) and input (blue) voltage waveforms for the bridge rectifier.
+
+ The output is fully rectified, with both half-cycles positive and a peak near 22.6 V due to diode drops. The output shows significant ripple since no filter capacitor is used. 
 
 - **Three-phase rectifier circuit in LTspice using MUR460 diodes:**
 
@@ -110,6 +141,7 @@ Below are examples from simulations:
 
 [1] M. H. Rashid, *Power Electronics Handbook*, 4th ed. Burlington, MA, USA: Butterworth-Heinemann, 2018. [Online]. Available: https://uodiyala.edu.iq/uploads/PDF%20ELIBRARY%20UODIYALA/EL23/RASHID_Power_Electronics_Handbook.pdf
 
-[2] Vishay Intertechnology, Inc., "MUR440-E3 - Ultrafast Rectifier," Datasheet, 2014. [Online]. Available:
+[2] Vishay Intertechnology, Inc., "1N4148 - Small Signal Fast Switching Diode," Datasheet, 2016. [Online]. Available: https://www.vishay.com/docs/81857/1n4148.pdf
 
+[3] Vishay Intertechnology, Inc., "MUR440-E3 - Ultrafast Rectifier," Datasheet, 2014. [Online]. Available: https://www.vishay.com/docs/88686/mur440-e3.pdf
 
