@@ -6,7 +6,7 @@ It´s a two-terminal pn-junctions device. When the potential between anode and c
 
 <img src="./images/behaviorDiode.png" alt="Diode behavior" />
 
-<p align="center"><b>Fig. 1.</b> Typical diode I-V behavior curve.</p>
+<p align="center"><b>Fig. 1.</b> Typical current-voltage (I-V) characteristic curve of a diode.</p>
 
 And can be describe by the equation knows as Shockley diode equation
 
@@ -44,7 +44,7 @@ the freewheeling diode (Dm) provides a safe path for the inductive current when 
 
 <img src="./images/FreeWheelingDiode.png" alt="FreeWheeling diode" />
 
-<p align="center"><b>Fig. 2.</b> Freewheeling diode configuration for inductive loads.</p>
+<p align="center"><b>Fig. 2.</b> Example of a freewheeling diode protecting a switch from inductive load voltage spikes.</p>
 
 # RECTIFIERS WITH DIODES
 
@@ -52,7 +52,7 @@ the freewheeling diode (Dm) provides a safe path for the inductive current when 
 
 <img src="./images/single-phase.png" alt="Single Phase rectifier" />
 
-<p align="center"><b>Fig. 3.</b> Single-phase full-wave rectifier circuit.</p>
+<p align="center"><b>Fig. 3.</b> Schematic of a single-phase full-wave rectifier using a center-tapped transformer.</p>
 
 A single-phase full-wave rectifier converts both the positive and negative halves of an AC voltage into a pulsating DC voltage. It uses a center-tapped transformer and two diodes. During the positive half-cycle, one diode conducts; during the negative half-cycle, the other does. This allows current to flow through the load in the same direction during both halves of the cycle. The result is a more efficient and smoother DC output compared to a half-wave rectifier.
 
@@ -60,7 +60,7 @@ A single-phase full-wave rectifier converts both the positive and negative halve
 
 <img src="./images/Three-phases.png" alt="Three Phases rectifier" />
 
-<p align="center"><b>Fig. 4.</b> Three-phase bridge rectifier circuit.</p>
+<p align="center"><b>Fig. 4.</b> Diagram of a three-phase bridge rectifier circuit.</p>
 
 A three-phase bridge rectifier uses six diodes to convert AC to DC in high-power applications. Two diodes conduct at a time, based on the highest line-to-line voltage, and each diode conducts for 120°. It produces a six-pulse DC output with lower ripple and works with or without a transformer
 
@@ -86,25 +86,25 @@ Below are examples from simulations:
 
 <img src="./images/rectifier-circuit.png" alt="LTspice rectifier circuit" />
 
-<p align="center"><b>Fig. 5.</b> Three-phase rectifier circuit in LTspice using MUR460 diodes.</p>
+<p align="center"><b>Fig. 5.</b> LTspice simulation schematic for a three-phase rectifier using MUR460 diodes.</p>
 
 - **Input signal:** shows the three voltage sources with the respective phase shift.
 
 <img src="./images/input-signal.png" alt="Input signal" />
 
-<p align="center"><b>Fig. 6.</b> Input signal: three-phase voltage sources with phase shift.</p>
+<p align="center"><b>Fig. 6.</b> Simulated three-phase input voltages showing phase displacement.</p>
 
 - **Output signal with ripple voltage:** result of rectification without filtering.
 
 <img src="./images/output-signal-ripple-voltaje.png" alt="Rippled output voltage" />
 
-<p align="center"><b>Fig. 7.</b> Output signal with ripple voltage (without filtering).</p>
+<p align="center"><b>Fig. 7.</b> Output voltage of the three-phase rectifier without filtering, showing ripple.</p>
 
 - **Output signal with 1000 uF capacitor:** result after adding a 1000 uF capacitor, showing a nearly DC voltage.
 
 <img src="./images/output-signal.png" alt="Output signal with capacitor" />
 
-<p align="center"><b>Fig. 8.</b> Output signal after adding a 1000 uF capacitor (nearly DC voltage).</p>
+<p align="center"><b>Fig. 8.</b> Output voltage after filtering with a 1000 uF capacitor, showing reduced ripple and nearly DC voltage.</p>
 
 # REFERENCES
 
