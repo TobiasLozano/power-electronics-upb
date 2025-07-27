@@ -81,7 +81,7 @@ To design a rectifier circuit, diode arrangements are used that vary according t
 
 Below are examples from simulations:
 
-- **Single-phase rectifier circuit in LTspice:**
+## Single-phase rectifier circuit in LTspice
 
 The following images show two typical single-phase rectifier configurations simulated in LTspice: the center-tapped rectifier with two diodes and the full-wave bridge rectifier with four diodes.
 
@@ -119,7 +119,7 @@ A sinusoidal AC source is connected to a diode bridge (four diodes) and a 1 k�
 
  The output is fully rectified, with both half-cycles positive and a peak near 22.6 V due to diode drops. The output shows significant ripple since no filter capacitor is used. 
 
-- **Three-phase rectifier circuit in LTspice using MUR460 diodes:**
+## Three-phase rectifier circuit in LTspice using MUR460 diodes
 
 [LtSpice File](https://github.com/TobiasLozano/power-electronics-upb/blob/main/Module%201%20Diodes/circuits/three-phase.asc)
 
