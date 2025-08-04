@@ -146,6 +146,8 @@ A sinusoidal AC source is connected to a diode bridge (four diodes) and a 1 k�
 
 <p align="center"><b>Fig. 8.</b> Output voltage after filtering with a 1200 uF capacitor, showing reduced ripple and nearly DC voltage.</p>
 
+# Video presentation
+[Module 1 - Diodes](https://www.youtube.com/watch?v=y_f7jPOzHwA)
 # REFERENCES
 
 [1] M. H. Rashid, *Power Electronics Handbook*, 4th ed. Burlington, MA, USA: Butterworth-Heinemann, 2018. [Online]. Available: https://uodiyala.edu.iq/uploads/PDF%20ELIBRARY%20UODIYALA/EL23/RASHID_Power_Electronics_Handbook.pdf
