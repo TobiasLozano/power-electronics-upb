@@ -6,7 +6,7 @@ It´s a two-terminal pn-junctions device. When the potential between anode and c
 
 <img src="./images/behaviorDiode.png" alt="Diode behavior" />
 
-<p align="center"><b>Fig. 1.</b> Typical current-voltage (I-V) characteristic curve of a diode.</p>
+<p align="center"><b>Fig. 1.</b> Typical current-voltage (I-V) characteristic curve of a diode. [^1] </p>
 
 And can be describe by the equation knows as Shockley diode equation
 
@@ -148,9 +148,11 @@ A sinusoidal AC source is connected to a diode bridge (four diodes) and a 1 k�
 
 # REFERENCES
 
-[1] M. H. Rashid, *Power Electronics Handbook*, 4th ed. Burlington, MA, USA: Butterworth-Heinemann, 2018. [Online]. Available: https://uodiyala.edu.iq/uploads/PDF%20ELIBRARY%20UODIYALA/EL23/RASHID_Power_Electronics_Handbook.pdf
+[^1] M. H. Rashid, *Power Electronics Handbook*, 4th ed. Burlington, MA, USA: Butterworth-Heinemann, 2018. [Online]. Available: https://uodiyala.edu.iq/uploads/PDF%20ELIBRARY%20UODIYALA/EL23/RASHID_Power_Electronics_Handbook.pdf
 
 [2] Vishay Intertechnology, Inc., "1N4148 - Small Signal Fast Switching Diode," Datasheet, 2016. [Online]. Available: https://www.vishay.com/docs/81857/1n4148.pdf
 
-[3] Vishay Intertechnology, Inc., "MUR440-E3 - Ultrafast Rectifier," Datasheet, 2014. [Online]. Available: https://www.vishay.com/docs/88686/mur440-e3.pdf
+[3] Vishay Intertechnology, Inc., 1N4001–1N4007 General Purpose Plastic Rectifier, Datasheet, Rev. 11-Feb-2021. [En línea]. Disponible en: https://www.vishay.com/docs/88503/1n4001.pdf
+
+[4] Vishay Intertechnology, Inc., "MUR440-E3 - Ultrafast Rectifier," Datasheet, 2014. [Online]. Available: https://www.vishay.com/docs/88686/mur440-e3.pdf
 
