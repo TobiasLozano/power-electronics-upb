@@ -6,7 +6,7 @@ It´s a two-terminal pn-junctions device. When the potential between anode and c
 
 <img src="./images/behaviorDiode.png" alt="Diode behavior" />
 
-<p align="center"><b>Fig. 1.</b> Typical current-voltage (I-V) characteristic curve of a diode. [^1] </p>
+<p align="center"><b>Fig. 1.</b> Typical current-voltage (I-V) characteristic curve of a diode.</p>
 
 And can be describe by the equation knows as Shockley diode equation
 
@@ -87,7 +87,7 @@ The following images show two typical single-phase rectifier configurations simu
 
 For the center-tapped rectifier, the first image shows the LTspice schematic using two diodes and a center-tapped transformer. The next image displays the input voltage waveform applied to the circuit, and the third image shows the output voltage waveform, which is a pulsating DC signal after rectification.
 
-[LtSpice File](https://github.com/TobiasLozano/power-electronics-upb/blob/main/Module%201%20Diodes/circuits/single-phase%20diode%20rectifier%20circuit.asc)
+[LtSpice File](https://github.com/TobiasLozano/power-electronics-upb/blob/main/Module%201%20Diodes/simulation_files/single-phase%20diode%20rectifier%20circuit.asc)
 
 
 <!-- Center-tapped single-phase rectifier (2 diodes) -->
@@ -102,7 +102,7 @@ For the center-tapped rectifier, the first image shows the LTspice schematic usi
 
 The next set of images corresponds to the full-wave bridge rectifier. The first image shows the complete circuit, where a sinusoidal AC source is connected to a diode bridge (four diodes) and a load resistor. The following images present the input and output voltage waveforms. The output waveform demonstrates the rectified signal, which is a series of positive pulses with a peak voltage slightly below the input peak voltage due to diode forward voltage drops.
 
-[LtSpice FIle](https://github.com/TobiasLozano/power-electronics-upb/blob/main/Module%201%20Diodes/circuits/Bridge_Rectifier_Circuit.asc)
+[LtSpice FIle](https://github.com/TobiasLozano/power-electronics-upb/blob/main/Module%201%20Diodes/simulation_files/Bridge_Rectifier_Circuit.asc)
 
 
 <!-- Bridge rectifier (4 diodes) -->
@@ -121,7 +121,7 @@ A sinusoidal AC source is connected to a diode bridge (four diodes) and a 1 k�
 
 ## Three-phase rectifier circuit in LTspice using MUR460 diodes
 
-[LtSpice File](https://github.com/TobiasLozano/power-electronics-upb/blob/main/Module%201%20Diodes/circuits/three-phase.asc)
+[LtSpice File](https://github.com/TobiasLozano/power-electronics-upb/blob/main/Module%201%20Diodes/simulation_files/three-phase.asc)
 
 
 <img src="./images/rectifier-circuit.png" alt="LTspice rectifier circuit" />
@@ -140,15 +140,15 @@ A sinusoidal AC source is connected to a diode bridge (four diodes) and a 1 k�
 
 <p align="center"><b>Fig. 7.</b> Output voltage of the three-phase rectifier without filtering, showing ripple.</p>
 
-- **Output signal with 1000 uF capacitor:** result after adding a 1000 uF capacitor, showing a nearly DC voltage.
+- **Output signal with 1200 uF capacitor:** result after adding a 1200 uF capacitor, showing a nearly DC voltage.
 
 <img src="./images/output-signal.png" alt="Output signal with capacitor" />
 
-<p align="center"><b>Fig. 8.</b> Output voltage after filtering with a 1000 uF capacitor, showing reduced ripple and nearly DC voltage.</p>
+<p align="center"><b>Fig. 8.</b> Output voltage after filtering with a 1200 uF capacitor, showing reduced ripple and nearly DC voltage.</p>
 
 # REFERENCES
 
-[^1] M. H. Rashid, *Power Electronics Handbook*, 4th ed. Burlington, MA, USA: Butterworth-Heinemann, 2018. [Online]. Available: https://uodiyala.edu.iq/uploads/PDF%20ELIBRARY%20UODIYALA/EL23/RASHID_Power_Electronics_Handbook.pdf
+[1] M. H. Rashid, *Power Electronics Handbook*, 4th ed. Burlington, MA, USA: Butterworth-Heinemann, 2018. [Online]. Available: https://uodiyala.edu.iq/uploads/PDF%20ELIBRARY%20UODIYALA/EL23/RASHID_Power_Electronics_Handbook.pdf
 
 [2] Vishay Intertechnology, Inc., "1N4148 - Small Signal Fast Switching Diode," Datasheet, 2016. [Online]. Available: https://www.vishay.com/docs/81857/1n4148.pdf
 
