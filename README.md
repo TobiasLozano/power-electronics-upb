@@ -14,4 +14,5 @@ Students:
 |  Module  |           Theme            |    Link                                                   |
 |----------|----------------------------|-----------------------------------------------------------|
 |     1    |Introduction to Power Diodes|    [Module 1: Diodes](Module%201%20Diodes/module_1_info.md)  |
+|2|Power Transistors  | ---  |
 
