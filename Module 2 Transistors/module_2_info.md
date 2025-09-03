@@ -31,4 +31,4 @@ A BJT (Bipolar Junction Transistor) is formed by combining two pn-junctions, cre
 
 <img src="./images/BJT.png" alt="BJTs">
 
-Simulation
+Simulation.
