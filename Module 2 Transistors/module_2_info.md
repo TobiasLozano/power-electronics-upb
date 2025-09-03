@@ -30,3 +30,5 @@ Since depletion MOSFETs are normally ON and enhancement MOSFETs are normally OFF
 A BJT (Bipolar Junction Transistor) is formed by combining two pn-junctions, creating NPN or PNP types. It has three terminals: collector, emitter, and base. With a wide emitter, narrow base, and doped collector, it provides efficient current conduction and a low on-state resistance, making it useful in power applications.
 
 <img src="./images/BJT.png" alt="BJTs">
+
+Simulation
