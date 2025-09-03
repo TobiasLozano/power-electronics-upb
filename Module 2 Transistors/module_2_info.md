@@ -110,7 +110,7 @@ Figure 3 illustrates the current waveform across resistor R3, which represents t
 </p>
 
 <p align="justify">
-The waveform shows two clear states: intervals of nearly zero current (when the TIP35C is in the cutoff region and no power is delivered to the load) and intervals where the current rises to approximately 1.6 A. This amplitude can be explained by Ohm’s law:
+The waveform shows two clear states: intervals of nearly zero current (when the TIP35C is in the cutoff region and no power is delivered to the load) and intervals where the current rises to approximately 1.6 A. This amplitude can be explained by Ohm’s law: 
 </p>
 
 <p align="center">
