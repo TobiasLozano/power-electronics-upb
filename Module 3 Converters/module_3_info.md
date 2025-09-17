@@ -6,7 +6,7 @@ In modern industrial and electronic applications, it is often necessary to conve
 
 These converters find wide application in traction motor control for electric vehicles, trolley cars, hoists, and forklifts, as well as in renewable energy systems. Their advantages include smooth acceleration control, high efficiency, and fast dynamic response. In transportation systems, DC–DC converters are also crucial because they enable regenerative braking of DC motors, feeding energy back to the supply and achieving significant energy savings. Furthermore, they are used in DC voltage regulation and in conjunction with inductors to generate current sources for inverters. As such, DC–DC converters are integral to modern energy conversion, especially in renewable and sustainable power systems.  
 
-[Insert Figure: General block diagram of a DC–DC converter]  
+<img width="852" height="437" alt="General block diagram of a DC–DC converter" src="https://github.com/user-attachments/assets/036606ca-2a51-4d0f-b483-35b62f3cab01" /> 
 
 The performance of a practical DC–DC converter can be described in terms of its input and output voltages and currents. Ideally, both should be pure DC; however, due to switching, they include harmonics and ripples. These fluctuations are inherent to the converter’s operation and appear both at the input and the output.  
 
