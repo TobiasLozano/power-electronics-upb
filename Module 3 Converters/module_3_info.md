@@ -27,13 +27,11 @@ The performance of a practical DC–DC converter can be described in terms of it
 <p align="center"><em>Figure 3. Typical input current of a DC–DC converter, showing the average value and the ripple component introduced by switching.</em></p>
   
 
-The average output power of a DC–DC converter is:
+La potencia promedio de salida de un convertidor DC-DC es:
 
-$$
-P_{dc} = V_a \cdot I_a
-$$
+$$P_{dc} = V_a \cdot I_a$$
 
-where \( V_a \) is the average output voltage and \( I_a \) is the average load current (Rashid, 2017).  
+donde $V_a$ es el voltaje promedio de salida y $I_a$ es la corriente promedio de carga (Rashid, 2017).
 
 This general theory sets the foundation for analyzing two of the most basic and fundamental converters: the **buck converter**, which reduces the voltage, and the **boost converter**, which increases it. In the following sections, their operation will be explained in detail, starting from the inductor and capacitor equations, applying the volt–second balance, and deriving the steady-state relations for each case.
 
@@ -41,11 +39,11 @@ This general theory sets the foundation for analyzing two of the most basic and 
 
 ## 3.2 BUCK CONVERTER
 
-The buck converter is a DC–DC power electronic circuit whose function is to reduce an input voltage \( V_{in} \) to a lower output voltage \( V_o \). The basic circuit consists of a controlled switch \( S \), a diode \( D \), an inductor \( L \), an output capacitor \( C \), and a resistive load \( R \). The theoretical development of its operation is based on the inductor voltage law \( v_L = L \tfrac{di_L}{dt} \), Kirchhoff’s laws, and the periodic steady-state condition, which requires volt–second balance on the inductor and charge balance on the capacitor.
+The buck converter is a DC–DC power electronic circuit whose function is to reduce an input voltage $V_{in}$ to a lower output voltage $V_o$. The basic circuit consists of a controlled switch $S$, a diode $D$, an inductor $L$, an output capacitor $C$, and a resistive load $R$. The theoretical development of its operation is based on the inductor voltage law $v_L = L \frac{di_L}{dt}$, Kirchhoff's laws, and the periodic steady-state condition, which requires volt–second balance on the inductor and charge balance on the capacitor.
 
 [Insert Figure: Buck converter schematic]
 
-When the switch is ON for a duration \( DT \), where \( D \) is the duty cycle and \( T = \tfrac{1}{f_s} \) is the switching period, the input source is directly applied to the inductor and load. The inductor voltage is:
+When the switch is ON for a duration $DT$, where $D$ is the duty cycle and $T = \frac{1}{f_s}$ is the switching period, the input source is directly applied to the inductor and load. The inductor voltage is:
 
 $$
 v_{L(on)} = V_{in} - V_o
