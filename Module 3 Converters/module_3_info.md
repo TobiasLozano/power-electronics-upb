@@ -14,7 +14,11 @@ These converters find wide application in traction motor control for electric ve
 
 The performance of a practical DC–DC converter can be described in terms of its input and output voltages and currents. Ideally, both should be pure DC; however, due to switching, they include harmonics and ripples. These fluctuations are inherent to the converter’s operation and appear both at the input and the output.  
 
-[Insert Figure: Typical output voltage with ripple]  
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/9f967c6d-abf6-4b22-8074-6cda4efb5291" alt="Typical output voltage waveform of a DC–DC converter" width="800"/>
+</p>  
+
+<p align="center"><em>Figure 2. Typical output voltage of a DC–DC converter, showing the average value with a superimposed ripple due to switching operation.</em></p>  
 [Insert Figure: Typical input current with ripple and average value]  
 
 The average output power of a DC–DC converter is:
