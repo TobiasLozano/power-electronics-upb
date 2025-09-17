@@ -19,7 +19,13 @@ The performance of a practical DC–DC converter can be described in terms of it
 </p>  
 
 <p align="center"><em>Figure 2. Typical output voltage of a DC–DC converter, showing the average value with a superimposed ripple due to switching operation.</em></p>  
-[Insert Figure: Typical input current with ripple and average value]  
+
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/1b6d6c42-004a-40f6-b1ec-40c8b0557dd6" alt="Typical input current waveform of a DC–DC converter" width="800"/>
+</p>  
+
+<p align="center"><em>Figure 3. Typical input current of a DC–DC converter, showing the average value and the ripple component introduced by switching.</em></p>
+  
 
 The average output power of a DC–DC converter is:
 
