@@ -223,14 +223,6 @@ $$
 C = \frac{I_o D}{f_s \Delta V_o}
 $$
 
----
-
-## Practical Considerations
-
-The above relations assume ideal components. In practice, the switch and diode have voltage drops, the inductor has winding resistance, and the capacitor has equivalent series resistance (ESR). These nonidealities reduce efficiency and modify the exact values of ripple and output voltage. The analysis with nonidealities follows the same laws but includes additional resistive and semiconductor voltage terms.
-
-[Insert Figure: Buck waveforms]  
-[Insert Figure: Boost waveforms]  
 
 ---
 
