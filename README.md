@@ -15,5 +15,5 @@ Students:
 |----------|----------------------------|-----------------------------------------------------------|
 |     1    |Introduction to Power Diodes|    [Module 1: Diodes](Module%201%20Diodes/module_1_info.md)  |
 |2|Power Transistors  | [Module 2: Transistors](Module%202%20Transistors/module_2_info.md)  |
-|3| DC-DC Converters |  [Module 3: DC-DC Converters](Module%203%20DC-DC-Converters/module_3_info.md) |
+|3| DC-DC Converters |  [Module 3: DC-DC Converters](Module%203%20Converters/module_3_info.md) |
 
