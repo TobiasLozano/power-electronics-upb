@@ -41,8 +41,13 @@ This general theory sets the foundation for analyzing two of the most basic and 
 
 The buck converter is a DC–DC power electronic circuit whose function is to reduce an input voltage $V_{in}$ to a lower output voltage $V_o$. The basic circuit consists of a controlled switch $S$, a diode $D$, an inductor $L$, an output capacitor $C$, and a resistive load $R$. The theoretical development of its operation is based on the inductor voltage law $v_L = L \frac{di_L}{dt}$, Kirchhoff's laws, and the periodic steady-state condition, which requires volt–second balance on the inductor and charge balance on the capacitor.
 
-[Insert Figure: Buck converter schematic]
+<p align="center">
+  <img src="./images/buck_converter.png" alt="Typical output voltage waveform of a DC–DC converter" width="800"/>
+</p>  
 
+<p align="center"><em>Figure 4. Buck converter schematic</em></p>  
+
+ 
 When the switch is ON for a duration $DT$, where $D$ is the duty cycle and $T = \frac{1}{f_s}$ is the switching period, the input source is directly applied to the inductor and load. The inductor voltage is:
 
 $$
@@ -141,7 +146,11 @@ $$
 
 The boost converter increases the input voltage \( V_{in} \) to a higher output voltage \( V_o > V_{in} \). The circuit consists of a controlled switch, a diode, an inductor, a capacitor, and a resistive load. The analysis again applies the inductor voltage law and periodic steady-state condition.
 
-[Insert Figure: Boost converter schematic]
+<p align="center">
+  <img src="./images/boost_converter.png" alt="Typical output voltage waveform of a DC–DC converter" width="800"/>
+</p>  
+
+<p align="center"><em>Figure 5. Boost converter schematic</em></p>  
 
 During the ON interval \( DT \), the switch is closed and the diode blocks. The inductor voltage is:
 
@@ -222,6 +231,26 @@ Thus, the minimum required capacitance is:
 $$
 C = \frac{I_o D}{f_s \Delta V_o}
 $$
+
+## 3.4. SIMULATIONS
+
+<p align="center">
+  <img src="./images/buck_simulation.png" alt="Typical input current waveform of a DC–DC converter" width="800"/>
+</p>  
+
+<p align="center"><em>Figure 6. Buck Converter LTspice Schematic.</em></p>
+
+Figure 4 shows the LTspice schematic of a buck converter circuit. The setup includes a sinusoidal AC source, a full-wave rectifier, and a buck converter stage composed of a MOSFET switch, a diode, an inductor, and an output capacitor. The switching signal applied to the MOSFET determines the duty cycle, which directly controls the output voltage. By adjusting the duty cycle, the buck converter reduces the rectified DC voltage to a lower, regulated value at the output.
+
+<p align="center">
+  <img src="./images/simulation_result.png" alt="Typical input current waveform of a DC–DC converter" width="800"/>
+</p>  
+
+<p align="center"><em>Figure 7. Buck Converter Simulation Waveforms.</em></p>
+
+
+Figure 5 presents the simulation waveforms for the buck converter. The blue trace represents the input voltage to the buck stage, while the green trace shows the output voltage across the load. As observed, the output voltage is significantly lower than the input voltage, demonstrating the voltage reduction achieved by the buck converter. The output voltage stabilizes at a value determined by the duty cycle of the switching signal, with some ripple superimposed due to the switching operation and the characteristics of the inductor and capacitor.
+
 
 
 ---
