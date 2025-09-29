@@ -223,6 +223,26 @@ $$
 C = \frac{I_o D}{f_s \Delta V_o}
 $$
 
+## 3.4. SIMULATIONS
+
+<p align="center">
+  <img src="./images/buck_simulation.png" alt="Typical input current waveform of a DC–DC converter" width="800"/>
+</p>  
+
+<p align="center"><em>Figure 4. Buck Converter LTspice Schematic.</em></p>
+
+Figure 4 shows the LTspice schematic of a buck converter circuit. The setup includes a sinusoidal AC source, a full-wave rectifier, and a buck converter stage composed of a MOSFET switch, a diode, an inductor, and an output capacitor. The switching signal applied to the MOSFET determines the duty cycle, which directly controls the output voltage. By adjusting the duty cycle, the buck converter reduces the rectified DC voltage to a lower, regulated value at the output.
+
+<p align="center">
+  <img src="./images/simulation_result.png" alt="Typical input current waveform of a DC–DC converter" width="800"/>
+</p>  
+
+<p align="center"><em>Figure 5. Buck Converter Simulation Waveforms.</em></p>
+
+
+Figure 5 presents the simulation waveforms for the buck converter. The blue trace represents the input voltage to the buck stage, while the green trace shows the output voltage across the load. As observed, the output voltage is significantly lower than the input voltage, demonstrating the voltage reduction achieved by the buck converter. The output voltage stabilizes at a value determined by the duty cycle of the switching signal, with some ripple superimposed due to the switching operation and the characteristics of the inductor and capacitor.
+
+
 
 ---
 
