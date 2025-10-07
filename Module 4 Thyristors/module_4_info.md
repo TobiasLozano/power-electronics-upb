@@ -54,6 +54,62 @@ A comparation table between the previous thyristors:
 | **MOS-controlled thyristor (MCT)** | MOSFET structure embedded in thyristor | Full gate-controlled turn-on and turn-off, low gate power | Motor drives, inverters, DC/DC converters |
 | **Static induction thyristor (SITH)** | Vertical-channel FET-like structure | Very fast switching, low on-state voltage, high-frequency | RF amplifiers, pulsed power, high-speed inverters |
 
+Simulation
 
+To analyze the switching characteristics and control behavior of the thyristor, different simulations were carried out using LTspice and Proteus. Each environment provided complementary insights: LTspice was used for waveform and component-level analysis, while Proteus allowed microcontroller-based control implementation.
+
+1. Basic Thyristor Circuit
+
+The initial setup represents a simple thyristor rectifier circuit. It consists of an SCR (Silicon Controlled Rectifier), a resistive load, and a basic RC triggering network. The purpose of this configuration is to observe the natural conduction of the thyristor when the gate receives a pulse and to analyze how it maintains conduction until the current falls below the holding current threshold.
+![Tiristor_Circuit](https://github.com/user-attachments/assets/33fd4518-804a-4508-85fc-cd0c4c117869)
+
+
+<p align="center"><em>Figure 3. Basic thyristor circuit schematic.</em></p>
+
+In this circuit:
+
+The AC voltage source provides a sinusoidal input that feeds the SCR and load.
+
+The resistor-capacitor (RC) network determines the phase delay before triggering the gate.
+
+Once the gate voltage exceeds the threshold, the SCR switches from its forward blocking state to forward conduction.
+
+When the anode current drops below the holding current, the SCR naturally turns off at the next zero crossing.
+
+This fundamental configuration helps to understand the latching and holding characteristics of the thyristor in open-loop conditions.
+
+2. LTSpice Simulation – Uncontrolled Thyristor
+
+The following circuit was simulated in LTspice to observe the uncontrolled behavior of the thyristor. It uses an MCR100-03 SCR model and a standard sinusoidal source. The gate is connected through a resistor network to provide a fixed triggering pulse without external modulation.
+![Tiristor_Circuit_SIM](https://github.com/user-attachments/assets/3c5882f5-8421-4e11-8d95-141034260e29)
+
+<p align="center"><em>Figure 4. LTspice simulation of the uncontrolled thyristor circuit.</em></p>
+
+The waveform generated in the simulation shows a typical phase-controlled rectified output:
+
+At each positive half-cycle, the SCR turns on once the gate receives a sufficient pulse, allowing current flow through the load.
+
+The output voltage waveform presents the characteristic ramp-up and decay pattern, showing conduction only during the part of the input cycle where the SCR is triggered and current remains above the holding threshold.
+
+When the current reaches zero, the SCR returns to the blocking state, awaiting the next gate pulse.
+
+This simulation validates the basic operation of the SCR and demonstrates how it can be used for power control in AC applications such as dimmers, controlled rectifiers, and motor speed control systems.
+
+3. Proteus Simulation – Arduino Controlled Thyristor
+
+Since LTspice does not natively support microcontroller integration, the control part of the system was implemented in Proteus using an Arduino Uno. The Arduino generates the gate signal according to a variable input (simulated via a potentiometer connected to an analog pin), allowing real-time adjustment of the thyristor’s firing angle.
+![Tiristor_Circuit_SIM_Proteus](https://github.com/user-attachments/assets/4b6aea46-f37a-4db0-9af0-798db304776a)
+
+<p align="center"><em>Figure 5. Proteus simulation with Arduino-based thyristor control.</em></p>
+
+In this configuration:
+
+The Arduino reads the voltage level from the potentiometer and converts it into a delay time for the gate trigger.
+
+Two optocouplers (PC817) provide electrical isolation between the low-voltage Arduino control circuit and the high-voltage thyristor section.
+
+The SCR is triggered at different points of the AC cycle depending on the analog input value, effectively adjusting the average output voltage across the load.
+
+This setup demonstrates phase-angle control using a microcontroller, a key concept in industrial power electronics, used in systems like dimmers, temperature controllers, and AC voltage regulators.
 
 
