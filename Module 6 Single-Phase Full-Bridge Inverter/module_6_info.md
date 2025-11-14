@@ -114,8 +114,9 @@ The implementation required the following hardware components:
 
 # 4. Circuit In Proteus 
 <div align="center">
-<img width="1090" height="765" alt="image" src="https://github.com/user-attachments/assets/29a14117-a3ca-460a-b7ee-30dc9b28c2e8" />
+  
 </div>
+
 
 # 5. Arduino SPWM Code
 
